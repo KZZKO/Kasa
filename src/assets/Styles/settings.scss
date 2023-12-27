@@ -1,0 +1,77 @@
+// ===========================================================================
+// -------------------------- Paramètres du site -----------------------------
+// ===========================================================================
+
+// --------- Couleur du site ---------
+
+$color-primary: #FF6060;
+// $color-secondary: #FF79DA;
+// $color-tr: #99E2D0;
+// $color-td: #008766;
+
+// --------- Nuance du site ----------
+
+// $color-fond-gris: #EAEAEA;
+$color-fond-whitegrey: #F6F6F6;
+$color-black: #000000;
+// $color-midgrey: #5e5e5e;
+// $color-card-grey: #787878;
+// $color-grey: #a5a5a5;
+$color-white: #ffffff;
+
+// --------- Nuance shadows ----------
+
+// $shadow-light-grey: #dddddd;
+// $shadow-card: #dddddd5e;
+// $shadow-card-menu: #d3d3d3ab;
+
+// --------- Nuance police -----------
+
+$color-police-main: #FF6060;
+
+// --------- Police du site ----------
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat bold';
+    src: url(../Fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+// ------- Mixins et variables -------
+
+$font-text: 'Montserrat';
+
+$font-text-bold: 'Montserrat bold';
+
+// ---------- Responsive ------------
+
+// Mobil version
+// $xs: px;
+
+// // Large Mobil version
+// $sm: px;
+
+// // Tablet version
+// $md: px;
+
+// // Desktop Version
+// $lg: px;
+
+// // Large desktop Version
+// $xl: px;
+
+// ------- Ajustement du site --------
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

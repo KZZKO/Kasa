@@ -1,0 +1,40 @@
+@import "/src/assets/Styles/settings.scss";
+
+
+// ================= Style du header ==================
+
+header {
+
+    max-width: 70%;
+    margin: 40px auto;
+
+    .header-bloc {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: $font-text;
+        user-select: none;
+
+        .header-first-bloc {
+    
+            // img {
+
+            // }
+        }
+    
+        .header-scnd-bloc {
+
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            font-size: 1.5em;
+            font-weight: 600;
+    
+            a {
+                color: $color-police-main;
+            }
+        }
+
+    }
+}

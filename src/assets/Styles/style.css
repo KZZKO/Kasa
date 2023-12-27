@@ -1,9 +1,1 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-* {
-    scroll-behavior: smooth;
-}
+@font-face{font-family:"Montserrat";src:url(../Fonts/Montserrat/Montserrat-Regular.ttf)}@font-face{font-family:"Montserrat bold";src:url(../Fonts/Montserrat/Montserrat-Bold.ttf)}*{scroll-behavior:smooth}body{margin:0;padding:0;box-sizing:border-box}/*# sourceMappingURL=style.css.map */
