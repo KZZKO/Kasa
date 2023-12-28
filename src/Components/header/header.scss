@@ -33,8 +33,12 @@ header {
     
             a {
                 color: $color-police-main;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
-
     }
 }

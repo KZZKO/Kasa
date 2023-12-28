@@ -1,11 +1,11 @@
 import { Header } from '../../Components/header/header.jsx'
-import { Banner } from '../../Components/banner/banner.jsx'
+import { Bannertwo } from '../../Components/banner/bannertwo.jsx'
 import { Footer } from '../../Components/footer/footer.jsx'
 
 export const About = () => {
     return <div>
         <Header />
-        <Banner />
+        <Bannertwo />
         <div>
             <p>A Propos</p>
         </div>

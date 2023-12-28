@@ -1,0 +1,32 @@
+@import "/src/assets/Styles/settings.scss";
+
+
+// ================= Style de la page d'erreur ==================
+
+.errorpage {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-text;
+    color: $color-police-main;
+
+    h1 {
+        font-size: 20em;
+        font-family: $font-text-bold;
+        margin: 30px 0;
+    }
+
+    p {
+        font-size: 2em;
+        margin: 50px 0;
+    }
+
+    a {
+        text-decoration: underline;
+        color: $color-police-main;
+        margin: 120px 0;
+        font-size: 1.3em;
+    }
+}
