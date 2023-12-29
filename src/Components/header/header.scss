@@ -34,10 +34,17 @@ header {
             a {
                 color: $color-police-main;
                 text-decoration: none;
+                letter-spacing: 1px;
 
                 &:hover {
                     text-decoration: underline;
+                    text-underline-offset: 4px;
                 }
+            }
+
+            .nav-active {
+                text-decoration: underline;
+                text-underline-offset: 4px;
             }
         }
     }

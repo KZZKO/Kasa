@@ -11,6 +11,7 @@
     align-items: center;
     font-family: $font-text;
     color: $color-police-main;
+    user-select: none;
 
     h1 {
         font-size: 20em;
