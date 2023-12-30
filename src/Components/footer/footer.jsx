@@ -1,7 +1,8 @@
 import './footer.scss'
 
 export const Footer = () => {
-    return <footer>
+    return (
+    <footer>
         <div className='footer-bloc'> 
             <div className="footer-first-bloc">
                 <img src="/src/assets/Images/Logo/LOGOwhite.png" alt="LogoKasa"/>
@@ -12,4 +13,5 @@ export const Footer = () => {
             </div>
         </div>
     </footer>
+    )
 }

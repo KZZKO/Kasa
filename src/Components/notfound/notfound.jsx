@@ -2,7 +2,8 @@ import { Link } from "react-router-dom"
 import './notfound.scss'
 
 export const Notfound = () => {
-    return <div className="errorpage">
+    return (
+    <div className="errorpage">
         <h1>
             404
         </h1>
@@ -11,4 +12,5 @@ export const Notfound = () => {
         </p>
         <Link to="/">Retourner sur la page d'accueil</Link>
     </div>
+    )
 }

@@ -3,9 +3,11 @@ import { Notfound } from '../../Components/notfound/notfound.jsx'
 import { Footer } from '../../Components/footer/footer.jsx'
 
 export const Error = () => {
-    return <div>
+    return (
+    <div>
         <Header />
         <Notfound />
         <Footer />
     </div>
+    )
 }

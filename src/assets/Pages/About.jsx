@@ -4,10 +4,12 @@ import { Collapse } from '../../Components/Collapse/collapse.jsx'
 import { Footer } from '../../Components/footer/footer.jsx'
 
 export const About = () => {
-    return <div>
+    return (
+    <div>
         <Header />
         <Bannertwo />
         <Collapse />
         <Footer />
     </div>
+    )
 }
