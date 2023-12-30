@@ -4,3 +4,76 @@
 // ================= Style des collapses ==================
 
 
+.collapse-bloc {
+
+    .collapse-elm {
+
+        max-width: 55%;
+        margin: 40px auto;
+        font-family: $font-text;
+
+        .collapse-item {
+
+            margin: 20px 0;
+
+            .collapse-title {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: $color-primary;
+                padding: 12px 15px;
+                border-radius: 5px;
+                user-select: none;
+                cursor: pointer;
+
+                h2 {
+                    margin: 0;
+                    color: $color-white;
+                    font-weight: 500;
+                }
+
+                i {
+                    margin-top: 5px;
+                    font-size: 1.5em;
+                    color: $color-white;
+                    transition: 0.5s ease;
+                }
+
+                .chevron-anim {
+                    transform: rotate(-180deg);
+                }
+            }
+
+            .collapse-content {
+                background-color: $color-fond-whitegrey;
+                border-radius: 0 0 5px 5px;
+                font-size: 1.1em;
+                color: $color-police-main;
+                text-align: left;
+                max-height: 0;
+                overflow: hidden;
+                transition: 0.4s ease;
+                // animation: content 0.4s;
+                // animation-fill-mode: forwards;
+
+                // @keyframes content {
+                //     from 0% {
+                //         opacity: 0;
+                //     }
+
+                //     to 100% {
+                //         opacity: 1;
+                //     }
+                // }
+            }  
+
+            .collapse-show {
+                padding: 15px;
+                height: auto;
+                max-height: 100px;
+                transition: 0.4s ease;
+            }
+        }
+    }
+}
