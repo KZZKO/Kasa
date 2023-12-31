@@ -11,6 +11,7 @@
         max-width: 70%;
         margin: 0 auto;
         user-select: none;
+        filter: drop-shadow(1px 5px 12px $color-grey);
 
         &::before {
             content: "";
@@ -42,7 +43,6 @@
             font-size: 3em;
             color: $color-white;
             margin: 0;
-
         }
     }
 }
