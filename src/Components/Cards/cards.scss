@@ -4,3 +4,67 @@
 // ================= Style des cards ==================
 
 
+.card-bloc {
+
+    .card-elm {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-fond-whitegrey;
+        padding: 40px 0px;
+        gap: 50px;
+        max-width: 70%;
+        margin: 40px auto;
+        border-radius: 25px;
+        font-family: $font-text;
+        user-select: none;
+
+        .card {
+
+            width: 28%;
+            height: 370px;
+            position: relative;
+            border-radius: 10px;
+            transition: 0.4s ease;
+
+            
+            &:hover {
+                cursor: pointer;
+                filter: drop-shadow(1px 16px 16px $color-grey);
+                transform: scale(1.03);
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.562));
+                    border-radius: 10px;
+                    transition: 0.4s ease;
+                }
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+
+            p {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                width: 80%;
+                margin: 5px 5px;
+                color: $color-white;
+                font-size: 1.1em;
+            }
+        }
+    }
+}
