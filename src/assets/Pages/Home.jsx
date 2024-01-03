@@ -6,11 +6,11 @@ import { Footer } from '../../Components/footer/footer.jsx'
 
 export const Index = () => {
     return (
-    <div>
-        <Header />
-        <Banner />
-        <Cards />
-        <Footer />
-    </div>
+        <div>
+            <Header />
+            <Banner />
+            <Cards />
+            <Footer />
+        </div>
     )
 }
