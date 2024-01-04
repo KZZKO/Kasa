@@ -1,7 +1,8 @@
 import { Header } from '../../Components/header/header.jsx'
+import { Slider } from '../../Components/Carrousel/Carrousel.jsx';
 import { Footer } from '../../Components/footer/footer.jsx'
-import Appartements from '../../Data/Appartements.json';
 import { useParams, Navigate } from 'react-router-dom';
+import Appartements from '../../Data/Appartements.json';
 
 
 export const Appartement = () => {
@@ -14,6 +15,7 @@ export const Appartement = () => {
     return (
         <div>
             <Header />
+            <Slider data={Appart.pictures} />
             <Footer />
         </div>
     )

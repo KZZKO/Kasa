@@ -1,0 +1,83 @@
+@import "/src/assets/Styles/settings.scss";
+
+
+// ================= Style du carrousel ==================
+
+.back-slider {
+
+    .bloc-slider {
+
+        max-width: 70%;
+        margin: 40px auto;
+        user-select: none;
+
+        .img-slider {
+
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 450px;
+            border-radius: 30px;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                border-radius: 30px;
+            }
+
+            .slider-btn-left {
+
+                position: absolute;
+                z-index: 2;
+                top: 50%;
+                left: 0px;
+                transform: translate(0%, -50%);
+                background: none;
+                border: none;
+                height: 100%;
+                width: 100px;
+                border-radius: 30px 0px 0px 30px;
+                transition: 0.4s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(214, 214, 214, 0.562));
+                }
+
+                i {
+                    color: $color-white;
+                    font-size: 6em;
+                    margin: 0;
+                }
+            }
+
+            .slider-btn-right {
+
+                position: absolute;
+                z-index: 2;
+                top: 50%;
+                right: 0px;
+                transform: translate(0%, -50%);
+                background: none;
+                border: none;
+                height: 100%;
+                width: 100px;
+                border-radius: 0px 30px 30px 0px;
+                transition: 0.4s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(214, 214, 214, 0.562));
+                }
+
+                i {
+                    color: $color-white;
+                    font-size: 6em;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

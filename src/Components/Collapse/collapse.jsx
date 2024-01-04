@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Statement from '../../Data/Statement.json';
+import PropTypes from 'prop-types';
 import './collapse.scss';
 
-export const Collapse = () => {
+export const Collapse = ({ data }) => {
   const [openCollapses, setOpenCollapses] = useState([]);
 
   const toggle = (i) => {
@@ -21,7 +21,7 @@ export const Collapse = () => {
   return (
     <div className="collapse-bloc">
       <div className="collapse-elm">
-        {Statement.map((item, i) => (
+        {data.map((item, i) => (
           <div className="collapse-item" key={i}>
             <div className="collapse-title" onClick={() => toggle(i)}>
               <h2>{item.title}</h2>
@@ -35,4 +35,13 @@ export const Collapse = () => {
       </div>
     </div>
   );
+};
+
+Collapse.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
