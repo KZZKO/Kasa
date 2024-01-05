@@ -1,0 +1,43 @@
+@import "/src/assets/Styles/settings.scss";
+
+
+// ================= Style des host ==================
+
+
+.host-bloc {
+
+    .host-card {
+
+        max-width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: end;
+        flex-direction: row-reverse;
+        gap: 10px;
+
+        .host-img {
+
+            width: 5%;
+            height: auto;
+            border-radius: 999px;
+            filter: drop-shadow(3px 5px 15px $color-darkgrey);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 999px;
+            }
+        }
+
+        p {
+            font-family: $font-text;
+            color: $color-police-main;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 0;
+            margin-top: 10px;
+            width: 5%;
+        }
+    }
+}

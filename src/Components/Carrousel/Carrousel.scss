@@ -10,6 +10,7 @@
         max-width: 70%;
         margin: 40px auto;
         user-select: none;
+        filter: drop-shadow(1px 5px 12px $color-grey);
 
         .img-slider {
 
@@ -50,6 +51,11 @@
                     color: $color-white;
                     font-size: 6em;
                     margin: 0;
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
             }
 
@@ -76,6 +82,11 @@
                     color: $color-white;
                     font-size: 6em;
                     margin: 0;
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
