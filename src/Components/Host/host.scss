@@ -12,7 +12,7 @@
         justify-content: space-evenly;
         flex-direction: row-reverse;
         align-items: center;
-        gap: 40px;
+        gap: 5px;
 
         .host-img {
 
@@ -31,14 +31,14 @@
 
         .host-text {
 
-            width: 7%;
-
             p {
                 font-family: $font-text;
                 color: $color-police-main;
                 font-size: 1em;
                 font-weight: 600;
                 margin: 0;
+                width: 93px;
+                text-align: end;
             }
         }
     }
