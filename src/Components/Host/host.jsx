@@ -7,7 +7,9 @@ export const Hosts = ({ name, picture }) => {
                 <div className='host-img'>
                     <img src={picture} alt="Photo de l'hébergeur" />
                 </div>
-                <p>{name}</p>
+                <div className='host-text'>
+                    <p>{name}</p>
+                </div>
             </div>
         </div>
     )

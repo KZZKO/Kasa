@@ -8,17 +8,16 @@
 
     .host-card {
 
-        max-width: 70%;
-        margin: 0 auto;
         display: flex;
-        justify-content: end;
+        justify-content: space-evenly;
         flex-direction: row-reverse;
-        gap: 10px;
+        align-items: center;
+        gap: 40px;
 
         .host-img {
 
-            width: 5%;
-            height: auto;
+            width: 60px;
+            height: 30%;
             border-radius: 999px;
             filter: drop-shadow(3px 5px 15px $color-darkgrey);
 
@@ -30,14 +29,17 @@
             }
         }
 
-        p {
-            font-family: $font-text;
-            color: $color-police-main;
-            font-size: 1.2em;
-            font-weight: 600;
-            margin: 0;
-            margin-top: 10px;
-            width: 5%;
+        .host-text {
+
+            width: 7%;
+
+            p {
+                font-family: $font-text;
+                color: $color-police-main;
+                font-size: 1em;
+                font-weight: 600;
+                margin: 0;
+            }
         }
     }
 }

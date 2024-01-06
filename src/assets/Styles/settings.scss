@@ -1,6 +1,6 @@
-// ===========================================================================
-// -------------------------- Paramètres du site -----------------------------
-// ===========================================================================
+// |===========================================================================|
+// |--------------------------| Paramètres du site |---------------------------|
+// |===========================================================================|
 
 // --------- Couleur du site ---------
 
@@ -12,7 +12,7 @@ $color-fond-whitegrey: #F6F6F6;
 $color-black: #000000;
 $color-verydarkgrey: #5e5e5e;
 $color-darkgrey: #787878;
-$color-grey: #a5a5a5;
+$color-grey: #d6d6d6;
 $color-white: #ffffff;
 
 // --------- Nuance shadows ----------
@@ -70,4 +70,32 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+// ------- Classes des éléments de page --------
+
+// |=================================================|
+// |==================| Appartement |================|
+// |=================================================|
+
+.bloc-appart {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 40px auto;
+    margin-top: 30px;
+
+    .first-bloc-appart {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .scnd-bloc-appart {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 }

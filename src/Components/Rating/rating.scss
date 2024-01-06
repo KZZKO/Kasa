@@ -2,3 +2,23 @@
 
 
 // ================= Style des étoiles ==================
+
+
+.rating-bloc {
+
+    .rating-stars {
+
+        display: flex;
+        justify-content: end;
+        gap: 5px;
+
+        .star {
+            font-size: 30px;
+            color: $color-grey;
+        }
+
+        .filled {
+            color: $color-primary;
+        }
+    }
+}
