@@ -8,6 +8,12 @@ header {
     max-width: 70%;
     margin: 40px auto;
 
+    @media (max-width: $xs) {
+
+        max-width: 90%;
+        margin: 25px auto;
+    }
+
     .header-bloc {
 
         display: flex;
@@ -17,12 +23,16 @@ header {
         user-select: none;
 
         .header-first-bloc {
-    
-            // img {
 
-            // }
+            img {
+
+                @media (max-width: $xs) {
+
+                    height: 50px;
+                }
+            }
         }
-    
+
         .header-scnd-bloc {
 
             display: flex;
@@ -30,11 +40,22 @@ header {
             gap: 60px;
             font-size: 1.5em;
             font-weight: 600;
-    
+
+            @media (max-width: $xs) {
+
+                font-size: 0.8em;
+                gap: 20px;
+            }
+
             a {
                 color: $color-police-main;
                 text-decoration: none;
                 letter-spacing: 1px;
+
+                @media (max-width: $xs) {
+
+                    text-transform: uppercase;
+                }
 
                 &:hover {
                     text-decoration: underline;

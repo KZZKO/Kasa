@@ -13,6 +13,12 @@
         flex-direction: row-reverse;
         align-items: center;
         gap: 5px;
+        user-select: none;
+
+        @media (max-width: $xs) {
+
+            gap: 10px;
+        }
 
         .host-img {
 
@@ -39,6 +45,11 @@
                 margin: 0;
                 width: 93px;
                 text-align: end;
+
+                @media (max-width: $xs) {
+
+                    width: 80px;
+                }
             }
         }
     }

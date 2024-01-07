@@ -17,11 +17,25 @@
         font-size: 20em;
         font-family: $font-text-bold;
         margin: 30px 0;
+
+        @media (max-width: $xs) {
+
+            font-size: 8.5em;
+            margin: 50px 0;
+        }
     }
 
     p {
         font-size: 2em;
         margin: 50px 0;
+        font-weight: 600;
+
+        @media (max-width: $xs) {
+
+            text-align: center;
+            font-size: 1.3em;
+            margin: 60px auto;
+        }
     }
 
     a {
@@ -29,5 +43,10 @@
         color: $color-police-main;
         margin: 120px 0;
         font-size: 1.3em;
+
+        @media (max-width: $xs) {
+
+            font-size: 1em;
+        }
     }
 }

@@ -11,5 +11,11 @@
         color: $color-police-main;
         margin: 0;
         font-size: 1.8em;
+
+        @media (max-width: $xs) {
+
+            font-size: 1.4em;
+            width: 85%;
+        }
     }
 }

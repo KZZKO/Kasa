@@ -20,17 +20,22 @@ footer {
         font-family: $font-text;
         gap: 40px;
 
+        @media (max-width: $xs) {
+
+            gap: 10px;
+        }
+
         .footer-first-bloc {
 
             display: flex;
             justify-content: center;
             margin-top: 20px;
-    
+
             // img {
-    
+
             // }
         }
-    
+
         .footer-scnd-bloc {
 
             display: flex;
@@ -38,15 +43,34 @@ footer {
             justify-content: center;
             gap: 10px;
 
+            @media (max-width: $xs) {
+
+                gap: 0px;
+                width: 60%;
+                text-align: center;
+                margin: 0 auto;
+            }
+
             i {
                 color: $color-white;
                 margin-top: 6px;
+
+                @media (max-width: $xs) {
+
+                    font-size: 0.7em;
+                    margin-top: 3.5px;
+                }
             }
-    
+
             p {
                 color: $color-white;
                 font-size: 1.5em;
                 margin: 0;
+
+                @media (max-width: $xs) {
+
+                    font-size: 0.8em;
+                }
             }
         }
 

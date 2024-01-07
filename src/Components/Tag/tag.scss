@@ -6,6 +6,8 @@
 
 .tag-bloc {
 
+    user-select: none;
+
     ul {
 
         list-style: none;
@@ -22,6 +24,11 @@
             border-radius: 7px;
             padding: 3px 20px;
             color: $color-white;
+
+            @media (max-width: $xs) {
+
+                padding: 5px;
+            }
         }
     }
 }

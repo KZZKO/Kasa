@@ -6,6 +6,12 @@
 
 .rating-bloc {
 
+    @media (max-width: $xs) {
+
+        display: flex;
+        align-items: center;
+    }
+
     .rating-stars {
 
         display: flex;
@@ -15,6 +21,11 @@
         .star {
             font-size: 30px;
             color: $color-grey;
+
+            @media (max-width: $xs) {
+
+                font-size: 20px;
+            }
         }
 
         .filled {

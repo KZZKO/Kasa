@@ -12,6 +12,11 @@
         margin: 40px auto;
         font-family: $font-text;
 
+        @media (max-width: $xs) {
+
+            max-width: 90%;
+        }
+
         .collapse-item {
 
             margin: 20px 0;
@@ -27,10 +32,22 @@
                 user-select: none;
                 cursor: pointer;
 
+                @media (max-width: $xs) {
+
+                    padding: 6px 10px;
+                }
+
                 h2 {
                     margin: 0;
                     color: $color-white;
                     font-weight: 500;
+
+                    @media (max-width: $xs) {
+
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.2em;
+                    }
                 }
 
                 i {
@@ -54,12 +71,17 @@
                 max-height: 0;
                 overflow: hidden;
                 transition: 0.6s ease;
+
+                @media (max-width: $xs) {
+
+                    font-size: 0.9em;
+                }
             }
 
             .collapse-show {
                 padding: 15px;
                 height: auto;
-                max-height: 100px;
+                max-height: 160px;
             }
         }
     }
