@@ -8,6 +8,12 @@ header {
     max-width: 70%;
     margin: 40px auto;
 
+    @media (max-width: $sm) {
+
+        max-width: 90%;
+        margin: 25px auto;
+    }
+
     @media (max-width: $xs) {
 
         max-width: 90%;
@@ -26,6 +32,11 @@ header {
 
             img {
 
+                @media (max-width: $sm) {
+
+                    height: 50px;
+                }
+
                 @media (max-width: $xs) {
 
                     height: 50px;
@@ -41,6 +52,12 @@ header {
             font-size: 1.5em;
             font-weight: 600;
 
+            @media (max-width: $sm) {
+
+                font-size: 1em;
+                gap: 20px;
+            }
+
             @media (max-width: $xs) {
 
                 font-size: 0.8em;
@@ -51,6 +68,11 @@ header {
                 color: $color-police-main;
                 text-decoration: none;
                 letter-spacing: 1px;
+
+                @media (max-width: $sm) {
+
+                    text-transform: uppercase;
+                }
 
                 @media (max-width: $xs) {
 

@@ -46,10 +46,10 @@ $font-text-bold: 'Montserrat bold';
 // ---------- Responsive ------------
 
 // Mobil version
-$xs: 420px;
+$xs: 490px;
 
 // // Large Mobil version
-// $sm: px;
+$sm: 700px;
 
 // // Tablet version
 // $md: px;
@@ -84,8 +84,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     max-width: 70%;
-    margin: 40px auto;
+    margin: 20px auto;
     margin-top: 30px;
+
+    @media (max-width: $sm) {
+
+        max-width: 90%;
+    }
 
     @media (max-width: $xs) {
 
@@ -106,6 +111,12 @@ body {
         flex-direction: column;
         gap: 15px;
 
+        @media (max-width: $sm) {
+
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         @media (max-width: $xs) {
 
             flex-direction: row-reverse;
@@ -113,3 +124,11 @@ body {
         }
     }
 }
+
+// .thrd-bloc-appart {
+
+//     margin: 0 auto;
+//     display: flex;
+//     justify-content: space-between;
+
+// }

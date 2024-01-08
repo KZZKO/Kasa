@@ -9,8 +9,13 @@
     .collapse-elm {
 
         max-width: 55%;
-        margin: 40px auto;
+        margin: 20px auto;
         font-family: $font-text;
+
+        @media (max-width: $sm) {
+
+            max-width: 90%;
+        }
 
         @media (max-width: $xs) {
 

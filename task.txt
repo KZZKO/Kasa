@@ -1,7 +1,6 @@
 
 Tâches principal:
 
-- Ajout du compteur sur le carrousel
 - terminer les collapses pour les appartements
 
 Tâches secondaire:

@@ -12,6 +12,12 @@
         margin: 0;
         font-size: 1.8em;
 
+        @media (max-width: $sm) {
+
+            font-size: 1.4em;
+            width: 85%;
+        }
+
         @media (max-width: $xs) {
 
             font-size: 1.4em;

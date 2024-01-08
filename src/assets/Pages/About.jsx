@@ -6,13 +6,23 @@ import { Footer } from '../../Components/footer/footer.jsx';
 import Statement from '../../Data/Statement.json';
 
 
+
 export const About = () => {
+
+
+
+
+
     return (
         <div>
             <Header />
             <Bannertwo />
-            <Collapse data={Statement} />
+            {
+                Statement.map((item, i) => {
+                    return <Collapse title={item.title} description={item.text} key={i} />
+                })
+            }
             <Footer />
-        </div>
+        </div >
     )
 }

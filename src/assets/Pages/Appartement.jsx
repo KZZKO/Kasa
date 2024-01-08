@@ -18,6 +18,8 @@ export const Appartement = () => {
     const Appart = Appartements.find((item) => item.id == id)
     if (Appart == null) { return <Navigate to="/Error" /> }
 
+
+
     return (
         <div>
             <Header />
@@ -33,8 +35,9 @@ export const Appartement = () => {
                     <Rating rating={parseInt(Appart.rating)} />
                 </div>
             </div>
-            <div>
-                <Collapse data={Appart.equipments} />
+            <div className='thrd-bloc-appart'>
+                <Collapse title="Description" description={Appart.description} />
+                <Collapse title="Equipements" description={Appart.equipments} />
             </div>
             <Footer />
         </div>

@@ -12,6 +12,11 @@
         user-select: none;
         filter: drop-shadow(1px 5px 12px $color-grey);
 
+        @media (max-width: $sm) {
+
+            max-width: 90%;
+        }
+
         @media (max-width: $xs) {
 
             max-width: 90%;
@@ -25,10 +30,41 @@
             height: 450px;
             border-radius: 30px;
 
+            @media (max-width: $sm) {
+
+                height: 300px;
+                border-radius: 10px;
+            }
+
             @media (max-width: $xs) {
 
                 height: 300px;
                 border-radius: 10px;
+            }
+
+            .counter {
+
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+                transform: translate(5%, 50%);
+                z-index: 2;
+                color: $color-white;
+                font-family: $font-text;
+                font-size: 1em;
+
+                @media (max-width: $sm) {
+
+                    display: none;
+                }
+
+                @media (max-width: $xs) {
+
+                    display: none;
+                }
+
+
+                // span {}
             }
 
             img {
@@ -37,6 +73,11 @@
                 height: 100%;
                 z-index: 1;
                 border-radius: 30px;
+
+                @media (max-width: $sm) {
+
+                    border-radius: 10px;
+                }
 
                 @media (max-width: $xs) {
 
@@ -58,6 +99,12 @@
                 border-radius: 30px 0px 0px 30px;
                 transition: all 0.4s ease;
 
+                @media (max-width: $sm) {
+
+                    border-radius: 10px 0px 0px 10px;
+                    width: 12%;
+                }
+
                 @media (max-width: $xs) {
 
                     border-radius: 10px 0px 0px 10px;
@@ -74,6 +121,11 @@
                     font-size: 6em;
                     margin: 0;
                     transition: 0.4s ease;
+
+                    @media (max-width: $sm) {
+
+                        font-size: 2.5em;
+                    }
 
                     @media (max-width: $xs) {
 
@@ -100,6 +152,12 @@
                 border-radius: 0px 30px 30px 0px;
                 transition: 0.4s ease;
 
+                @media (max-width: $sm) {
+
+                    border-radius: 0px 10px 10px 0px;
+                    width: 12%;
+                }
+
                 @media (max-width: $xs) {
 
                     border-radius: 0px 10px 10px 0px;
@@ -116,6 +174,11 @@
                     font-size: 6em;
                     margin: 0;
                     transition: 0.4s ease;
+
+                    @media (max-width: $sm) {
+
+                        font-size: 2.5em;
+                    }
 
                     @media (max-width: $xs) {
 

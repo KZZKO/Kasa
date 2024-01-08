@@ -17,6 +17,9 @@ export const Slider = ({ data }) => {
             <div className='bloc-slider'>
                 <div className='img-slider'>
                     <img src={data[currentImageIndex]} alt="Image carrousel" />
+                    <div className="counter">
+                        <p>{currentImageIndex + 1} / {data.length}</p>
+                    </div>
                     <button className='slider-btn-left' onClick={showPreviousImage}>
                         <i className="fa-solid fa-chevron-left"></i>
                     </button>
