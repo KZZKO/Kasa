@@ -9,5 +9,6 @@ Tâches secondaire:
 
 Annexes:
 
+- Retirer les erreurs
 - Commenter le code
 - Préparer la soutenance
