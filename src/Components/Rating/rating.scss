@@ -6,7 +6,13 @@
 
 .rating-bloc {
 
-    @media (max-width: $xs) {
+    @media (max-width: $md) {
+
+        display: flex;
+        align-items: center;
+    }
+
+    @media (max-width: $sm) {
 
         display: flex;
         align-items: center;
@@ -22,12 +28,12 @@
             font-size: 30px;
             color: $color-grey;
 
-            @media (max-width: $sm) {
+            @media (max-width: $md) {
 
                 font-size: 20px;
             }
 
-            @media (max-width: $xs) {
+            @media (max-width: $sm) {
 
                 font-size: 20px;
             }

@@ -6,22 +6,19 @@ import { Footer } from '../../Components/footer/footer.jsx';
 import Statement from '../../Data/Statement.json';
 
 
-
 export const About = () => {
 
-
-
-
-
     return (
-        <div>
+        <div className='about-page'>
             <Header />
             <Bannertwo />
-            {
-                Statement.map((item, i) => {
-                    return <Collapse title={item.title} description={item.text} key={i} />
-                })
-            }
+            <div className='about-collapse'>
+                {
+                    Statement.map((item, i) => {
+                        return <Collapse title={item.title} description={item.text} key={i} />
+                    })
+                }
+            </div>
             <Footer />
         </div >
     )

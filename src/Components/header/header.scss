@@ -8,13 +8,25 @@ header {
     max-width: 70%;
     margin: 40px auto;
 
-    @media (max-width: $sm) {
+    @media (max-width: $xl) {
+
+        max-width: 80%;
+        margin: 25px auto;
+    }
+
+    @media (max-width: $lg) {
 
         max-width: 90%;
         margin: 25px auto;
     }
 
-    @media (max-width: $xs) {
+    @media (max-width: $md) {
+
+        max-width: 90%;
+        margin: 25px auto;
+    }
+
+    @media (max-width: $sm) {
 
         max-width: 90%;
         margin: 25px auto;
@@ -32,6 +44,11 @@ header {
 
             img {
 
+                @media (max-width: $md) {
+
+                    height: 50px;
+                }
+
                 @media (max-width: $sm) {
 
                     height: 50px;
@@ -39,7 +56,7 @@ header {
 
                 @media (max-width: $xs) {
 
-                    height: 50px;
+                    height: 40px;
                 }
             }
         }
@@ -52,13 +69,25 @@ header {
             font-size: 1.5em;
             font-weight: 600;
 
-            @media (max-width: $sm) {
+            @media (max-width: $xl) {
+
+                font-size: 1.4em;
+                gap: 40px;
+            }
+
+            @media (max-width: $lg) {
+
+                font-size: 1.3em;
+                gap: 25px;
+            }
+
+            @media (max-width: $md) {
 
                 font-size: 1em;
                 gap: 20px;
             }
 
-            @media (max-width: $xs) {
+            @media (max-width: $sm) {
 
                 font-size: 0.8em;
                 gap: 20px;
@@ -69,12 +98,12 @@ header {
                 text-decoration: none;
                 letter-spacing: 1px;
 
-                @media (max-width: $sm) {
+                @media (max-width: $md) {
 
                     text-transform: uppercase;
                 }
 
-                @media (max-width: $xs) {
+                @media (max-width: $sm) {
 
                     text-transform: uppercase;
                 }

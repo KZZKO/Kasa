@@ -1,12 +1,11 @@
 
 Tâches principal:
 
-- terminer les collapses pour les appartements
+- Terminé
 
 Tâches secondaire:
 
-- fixer le footer en bas
-- Finir le responsive
+- Terminé
 
 Annexes:
 

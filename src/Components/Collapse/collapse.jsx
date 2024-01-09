@@ -1,46 +1,40 @@
 import React, { useState } from 'react';
-
 import './collapse.scss';
 
-export const Collapse = ({ title, description }) => {
 
+
+export const Collapse = ({ title, description }) => {
   const [openCollapses, setOpenCollapses] = useState(false);
 
   const toggle = () => {
+    setOpenCollapses(!openCollapses);
+  };
 
-    // On vérifie si l'indice est déjà dans le tableau
-
-    if (openCollapses) {
-      setOpenCollapses(false);
-      // Si il est ouvert, on le retire du tableau
+  const stringToList = (data) => {
+    if (Array.isArray(data)) {
+      return (
+        <ul>
+          {data.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      );
     } else {
-      setOpenCollapses(true);
-      // Ou si il est fermer, on l'ajoute au tableau
+      return <p>{data}</p>;
     }
   };
 
   return (
-    <div className="collapse-bloc">
-      <div className="collapse-elm">
-        <div div className="collapse-item" >
-          <div className="collapse-title" onClick={() => toggle()}>
-            <h2>{title}</h2>
-            <i className={`fa-solid fa-chevron-up ${openCollapses ? 'chevron-anim' : ''}`}></i>
-          </div>
-          <div className={`collapse-content ${openCollapses ? 'collapse-show' : ''}`}>
-            {description}
-          </div>
+    <div className="collapse-elm">
+      <div className="collapse-item">
+        <div className="collapse-title" onClick={() => toggle()}>
+          <h2>{title}</h2>
+          <i className={`fa-solid fa-chevron-up ${openCollapses ? 'chevron-anim' : ''}`}></i>
+        </div>
+        <div className={`collapse-content ${openCollapses ? 'collapse-show' : ''}`}>
+          {title === "Equipements" ? (stringToList(description)) : (<p>{description}</p>)}
         </div>
       </div>
     </div>
-  )
+  );
 };
-
-// Collapse.propTypes = {
-//   data: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       title: PropTypes.string.isRequired,
-//       text: PropTypes.string.isRequired,
-//     })
-//   ).isRequired,
-// };

@@ -12,15 +12,33 @@
         margin: 0;
         font-size: 1.8em;
 
-        @media (max-width: $sm) {
+        @media (max-width: $xl) {
+
+            font-size: 1.6em;
+            width: 90%;
+        }
+
+        @media (max-width: $lg) {
 
             font-size: 1.4em;
+            width: 90%;
+        }
+
+        @media (max-width: $md) {
+
+            font-size: 1.4em;
+            width: 90%;
+        }
+
+        @media (max-width: $sm) {
+
+            font-size: 1.3em;
             width: 85%;
         }
 
         @media (max-width: $xs) {
 
-            font-size: 1.4em;
+            font-size: 1.2em;
             width: 85%;
         }
     }

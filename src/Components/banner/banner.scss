@@ -14,7 +14,22 @@
         user-select: none;
         filter: drop-shadow(1px 5px 12px $color-grey);
 
-        @media (max-width: $xs) {
+        @media (max-width: $xl) {
+
+            max-width: 80%;
+        }
+
+        @media (max-width: $lg) {
+
+            max-width: 90%;
+        }
+
+        @media (max-width: $md) {
+
+            max-width: 90%;
+        }
+
+        @media (max-width: $sm) {
 
             max-width: 90%;
         }
@@ -28,7 +43,22 @@
             width: 100%;
             height: 250px;
 
-            @media (max-width: $xs) {
+            @media (max-width: $xl) {
+
+                height: 230px;
+            }
+
+            @media (max-width: $lg) {
+
+                height: 220px;
+            }
+
+            @media (max-width: $md) {
+
+                height: 170px;
+            }
+
+            @media (max-width: $sm) {
 
                 height: 140px;
             }
@@ -41,7 +71,22 @@
             object-fit: cover;
             border-radius: 20px;
 
-            @media (max-width: $xs) {
+            @media (max-width: $xl) {
+
+                height: 230px;
+            }
+
+            @media (max-width: $lg) {
+
+                height: 220px;
+            }
+
+            @media (max-width: $md) {
+
+                height: 170px;
+            }
+
+            @media (max-width: $sm) {
 
                 height: 140px;
             }
@@ -61,11 +106,48 @@
             margin: 0;
             width: 60%;
 
-            @media (max-width: $xs) {
+            @media (max-width: $xl) {
+
+                font-size: 2em;
+                font-weight: 600;
+                width: 80%;
+                top: 50%;
+                left: 20%;
+                transform: translate(0%, -50%);
+            }
+
+            @media (max-width: $lg) {
+
+                font-size: 2.3em;
+                font-weight: 600;
+                width: 55%;
+                left: 10%;
+                transform: translate(-10%, -50%);
+            }
+
+            @media (max-width: $md) {
+
+                font-size: 2em;
+                font-weight: 500;
+                width: 69%;
+                left: 10%;
+                transform: translate(-10%, -50%);
+            }
+
+            @media (max-width: $sm) {
 
                 font-size: 1.5em;
                 font-weight: 500;
                 width: 60%;
+                left: 10%;
+                transform: translate(-10%, -50%);
+            }
+
+            @media (max-width: $xs) {
+
+                font-size: 1.4em;
+                font-weight: 500;
+                width: 63%;
                 left: 10%;
                 transform: translate(-10%, -50%);
             }

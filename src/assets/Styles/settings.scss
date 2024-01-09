@@ -45,20 +45,20 @@ $font-text-bold: 'Montserrat bold';
 
 // ---------- Responsive ------------
 
-// Mobil version
-$xs: 490px;
+// Small Mobile version
+$xs: 380px;
 
-// // Large Mobil version
-$sm: 700px;
+// Mobile version
+$sm: 490px;
 
-// // Tablet version
-// $md: px;
+// Large Mobile version
+$md: 700px;
 
-// // Desktop Version
-// $lg: px;
+// Tablet Version
+$lg: 920px;
 
-// // Large desktop Version
-// $xl: px;
+// Desktop Version
+$xl: 1440px;
 
 // ------- Ajustement du site --------
 
@@ -72,7 +72,101 @@ body {
     box-sizing: border-box;
 }
 
+p,
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
 // ------- Classes des éléments de page --------
+
+// |=================================================|
+// |==================| A Propos |===================|
+// |=================================================|
+
+@media (max-width: $lg) {
+
+    .about-page {
+
+        footer {
+
+            margin-top: 15%;
+        }
+    }
+}
+
+@media (max-width: $md) {
+
+    .about-page {
+
+        footer {
+
+            margin-top: 35%;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+
+    .about-page {
+
+        footer {
+
+            margin-top: 65%;
+        }
+    }
+}
+
+@media (max-width: $xs) {
+
+    .about-page {
+
+        footer {
+
+            margin-top: 70%;
+        }
+    }
+}
+
+.about-collapse {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .collapse-elm {
+        width: 55%;
+    }
+
+    @media (max-width: $xl) {
+
+        max-width: 90%;
+        margin: 0 auto;
+
+        .collapse-elm {
+            width: 70%;
+        }
+    }
+
+    @media (max-width: $lg) {
+
+        max-width: 90%;
+        margin: 0 auto;
+
+        .collapse-elm {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: $md) {
+
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
 
 // |=================================================|
 // |==================| Appartement |================|
@@ -87,12 +181,31 @@ body {
     margin: 20px auto;
     margin-top: 30px;
 
-    @media (max-width: $sm) {
+    @media (max-width: $xl) {
 
-        max-width: 90%;
+        max-width: 80%;
+        flex-direction: row;
+        margin-top: 15px;
+        gap: 15px;
     }
 
-    @media (max-width: $xs) {
+    @media (max-width: $lg) {
+
+        max-width: 90%;
+        flex-direction: row;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    @media (max-width: $md) {
+
+        max-width: 90%;
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    @media (max-width: $sm) {
 
         max-width: 90%;
         flex-direction: column;
@@ -111,13 +224,25 @@ body {
         flex-direction: column;
         gap: 15px;
 
-        @media (max-width: $sm) {
+        @media (max-width: $xl) {
 
             flex-direction: column;
             justify-content: space-between;
         }
 
-        @media (max-width: $xs) {
+        @media (max-width: $lg) {
+
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @media (max-width: $md) {
+
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        @media (max-width: $sm) {
 
             flex-direction: row-reverse;
             justify-content: space-between;
@@ -125,10 +250,35 @@ body {
     }
 }
 
-// .thrd-bloc-appart {
+.thrd-bloc-appart {
 
-//     margin: 0 auto;
-//     display: flex;
-//     justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 70%;
+    margin: 0 auto;
 
-// }
+    @media (max-width: $xl) {
+
+        flex-direction: row;
+        max-width: 80%;
+    }
+
+    @media (max-width: $lg) {
+
+        flex-direction: row;
+        max-width: 90%;
+    }
+
+    @media (max-width: $md) {
+
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    @media (max-width: $sm) {
+
+        flex-direction: column;
+        max-width: 90%;
+    }
+}

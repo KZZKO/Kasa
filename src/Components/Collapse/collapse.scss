@@ -4,89 +4,108 @@
 // ================= Style des collapses ==================
 
 
-.collapse-bloc {
+.collapse-elm {
 
-    .collapse-elm {
+    width: 47%;
+    margin: 0;
+    font-family: $font-text;
 
-        max-width: 55%;
-        margin: 20px auto;
-        font-family: $font-text;
+    @media (max-width: $md) {
 
-        @media (max-width: $sm) {
+        width: 100%;
+        margin: 0 auto;
+    }
 
-            max-width: 90%;
-        }
+    @media (max-width: $sm) {
 
-        @media (max-width: $xs) {
+        width: 100%;
+        margin: 0 auto;
+    }
 
-            max-width: 90%;
-        }
+    .collapse-item {
 
-        .collapse-item {
+        margin: 10px 0;
 
-            margin: 20px 0;
+        .collapse-title {
 
-            .collapse-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: $color-primary;
+            padding: 12px 15px;
+            border-radius: 5px;
+            user-select: none;
+            cursor: pointer;
 
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                background-color: $color-primary;
-                padding: 12px 15px;
-                border-radius: 5px;
-                user-select: none;
-                cursor: pointer;
+            @media (max-width: $lg) {
 
-                @media (max-width: $xs) {
+                padding: 6px 10px;
+            }
 
-                    padding: 6px 10px;
-                }
+            @media (max-width: $md) {
 
-                h2 {
-                    margin: 0;
-                    color: $color-white;
-                    font-weight: 500;
+                padding: 6px 10px;
+            }
 
-                    @media (max-width: $xs) {
+            @media (max-width: $sm) {
 
-                        display: flex;
-                        align-items: center;
-                        font-size: 1.2em;
-                    }
-                }
+                padding: 4px 10px;
+            }
 
-                i {
-                    margin-top: 5px;
-                    font-size: 1.5em;
-                    color: $color-white;
-                    transition: 0.5s ease;
-                }
+            h2 {
+                margin: 0;
+                color: $color-white;
+                font-weight: 500;
 
-                .chevron-anim {
-                    transform: rotate(-180deg);
+                @media (max-width: $sm) {
+
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.1em;
                 }
             }
 
-            .collapse-content {
-                background-color: $color-fond-whitegrey;
-                border-radius: 0 0 5px 5px;
-                font-size: 1.1em;
-                color: $color-police-main;
-                text-align: left;
-                max-height: 0;
-                overflow: hidden;
-                transition: 0.6s ease;
+            i {
+                margin-top: 5px;
+                font-size: 1.5em;
+                color: $color-white;
+                transition: 0.5s ease;
 
-                @media (max-width: $xs) {
+                @media (max-width: $sm) {
 
-                    font-size: 0.9em;
+                    font-size: 1.1em;
                 }
             }
 
-            .collapse-show {
-                padding: 15px;
-                height: auto;
-                max-height: 160px;
+            .chevron-anim {
+                transform: rotate(-180deg);
+            }
+        }
+
+        .collapse-content {
+            background-color: $color-fond-whitegrey;
+            border-radius: 0 0 5px 5px;
+            font-size: 1.1em;
+            color: $color-police-main;
+            text-align: left;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.6s ease;
+
+            @media (max-width: $sm) {
+
+                font-size: 0.9em;
+            }
+        }
+
+        .collapse-show {
+            padding: 15px;
+            height: auto;
+            max-height: 160px;
+
+            @media (max-width: $xs) {
+
+                max-height: 170px;
             }
         }
     }

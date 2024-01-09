@@ -15,12 +15,12 @@
         gap: 5px;
         user-select: none;
 
-        @media (max-width: $sm) {
+        @media (max-width: $md) {
 
             gap: 10px;
         }
 
-        @media (max-width: $xs) {
+        @media (max-width: $sm) {
 
             gap: 10px;
         }
@@ -32,12 +32,12 @@
             border-radius: 999px;
             filter: drop-shadow(3px 5px 15px $color-darkgrey);
 
-            @media (max-width: $sm) {
+            @media (max-width: $md) {
 
                 width: 50px;
             }
 
-            @media (max-width: $xs) {
+            @media (max-width: $sm) {
 
                 width: 40px;
             }
@@ -61,7 +61,7 @@
                 width: 93px;
                 text-align: end;
 
-                @media (max-width: $xs) {
+                @media (max-width: $sm) {
 
                     width: 80px;
                 }
