@@ -2,13 +2,17 @@ import React, { useState } from 'react';
 import './Carrousel.scss';
 
 export const Slider = ({ data }) => {
+    // Définition du composant fonctionnel Slider qui prend un objet 'data' en tant que prop
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    // Utilisation du hook useState pour gérer l'index de l'image actuelle dans le carrousel
 
     const showPreviousImage = () => {
+        // Fonction pour afficher l'image précédente dans le carrousel
         setCurrentImageIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : data.length - 1));
     };
 
     const showNextImage = () => {
+        // Fonction pour afficher l'image suivante dans le carrousel
         setCurrentImageIndex((prevIndex) => (prevIndex < data.length - 1 ? prevIndex + 1 : 0));
     };
 

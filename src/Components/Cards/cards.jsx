@@ -1,30 +1,21 @@
-import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import './cards.scss';
 
 export const Cards = ({ data }) => {
+    // Définition du composant fonctionnel Cards qui prend un objet 'data' en tant que prop
     const navigate = useNavigate();
+    // Initialisation de la fonction de navigation à partir de react-router-dom
 
     return (
         <div className='card-bloc'>
             <div className='card-elm'>
                 {data.map((item) => (
-                    <div key={item.id} className='card' onClick={() => { navigate(`/Appartement/${item.id}`); }}>
+                    <article key={item.id} className='card' onClick={() => { navigate(`/Appartement/${item.id}`); }}>
                         <img src={item.cover} alt="Image de l'appartement" />
                         <p>{item.title}</p>
-                    </div>
+                    </article>
                 ))}
             </div>
         </div>
     );
-};
-
-Cards.propTypes = {
-    data: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.number.isRequired,
-            cover: PropTypes.string.isRequired,
-            title: PropTypes.string.isRequired,
-        })
-    ).isRequired,
 };
