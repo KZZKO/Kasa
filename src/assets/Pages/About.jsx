@@ -14,8 +14,8 @@ export const About = () => {
             <Bannertwo />
             <div className='about-collapse'>
                 {
-                    Statement.map((item, i) => {
-                        return <Collapse title={item.title} description={item.text} key={i} />
+                    Statement.map((item) => {
+                        return <Collapse title={item.title} description={item.text} />
                     })
                 }
             </div>

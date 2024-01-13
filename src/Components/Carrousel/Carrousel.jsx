@@ -9,11 +9,15 @@ export const Slider = ({ data }) => {
     const showPreviousImage = () => {
         // Fonction pour afficher l'image précédente dans le carrousel
         setCurrentImageIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : data.length - 1));
+        // Si prevIndex est supérieur à 0, retourne d'une image en arrière, 
+        // sinon, retourne à la dernière image du tableau 'data'
     };
 
     const showNextImage = () => {
         // Fonction pour afficher l'image suivante dans le carrousel
         setCurrentImageIndex((prevIndex) => (prevIndex < data.length - 1 ? prevIndex + 1 : 0));
+        // Si prevIndex est inférieur à l'index maximal possible (longueur du tableau 'data' - 1), passe à l'image suivante
+        // sinon, retourne à la première image du tableau 'data'
     };
 
     return (

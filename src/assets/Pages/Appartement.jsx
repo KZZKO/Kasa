@@ -14,9 +14,16 @@ import Appartements from '../../Data/Appartements.json';
 export const Appartement = () => {
 
     let { id } = useParams();
+    // Extraction du paramètre 'id' de l'URL en utilisant le hook 'useParams'
 
     const Appart = Appartements.find((item) => item.id == id)
-    if (Appart == null) { return <Navigate to="/Error" /> }
+    // Recherche de l'appartement correspondant à l'id dans le tableau 'Appartements'
+    if (Appart == null)
+    // Vérification si l'appartement n'est pas trouvé (null)
+    { return <Navigate to="/Error" /> }
+    // Redirection vers la page d'erreur en utilisant le composant 'Navigate' de React Router
+
+    // Si l'appartement est trouvé, le contenue de la page s'affiche
 
 
 
