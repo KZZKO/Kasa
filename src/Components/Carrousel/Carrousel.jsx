@@ -20,20 +20,34 @@ export const Slider = ({ data }) => {
         // sinon, retourne à la première image du tableau 'data'
     };
 
+    const HideArrowsAndCounter = data.length <= 1;
+    // Déclaration de la variable 'HideArrowsAndCounter'
+    // La variable sera 'true' si la longueur de 'data' est inférieure ou égale à 1,
+    // sinon elle sera 'false'.
+
     return (
         <section className='back-slider'>
             <div className='bloc-slider'>
                 <div className='img-slider'>
                     <img src={data[currentImageIndex]} alt="Image carrousel" />
-                    <div className="counter">
-                        <p>{currentImageIndex + 1} / {data.length}</p>
-                    </div>
-                    <button className='slider-btn-left' onClick={showPreviousImage}>
-                        <i className="fa-solid fa-chevron-left"></i>
-                    </button>
-                    <button className='slider-btn-right' onClick={showNextImage}>
-                        <i className="fa-solid fa-chevron-right"></i>
-                    </button>
+                    {/* Condition pour masquer le compteur */}
+                    {!HideArrowsAndCounter && (
+                        <div className="counter">
+                            <p>{currentImageIndex + 1} / {data.length}</p>
+                        </div>
+                    )}
+                    {/* Condition pour masquer la flèche gauche */}
+                    {!HideArrowsAndCounter && (
+                        <button className='slider-btn-left' onClick={showPreviousImage}>
+                            <i className="fa-solid fa-chevron-left"></i>
+                        </button>
+                    )}
+                    {/* Condition pour masquer la flèche droite */}
+                    {!HideArrowsAndCounter && (
+                        <button className='slider-btn-right' onClick={showNextImage}>
+                            <i className="fa-solid fa-chevron-right"></i>
+                        </button>
+                    )}
                 </div>
             </div>
         </section>
